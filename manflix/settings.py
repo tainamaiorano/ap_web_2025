@@ -99,6 +99,9 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+#configura o django para usar o model customizado de usuario que criamos
+# padrão: nome do app (normalmente é app) e tambem o nome do class no models
+AUTH_USER_MODEL = 'app.CustomUser'
 
 
 # Internationalization
